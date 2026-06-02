@@ -25,21 +25,21 @@
     <div class="absolute top-1/4 left-1/2 w-[350px] h-[350px] sm:w-[700px] sm:h-[700px] glow-bg -z-10 rounded-full"></div>
 
     <!-- Navbar -->
-    <nav class="w-full max-w-7xl mx-auto px-4 sm:px-8 py-6 grid grid-cols-2 sm:grid-cols-3 items-center relative z-10 border-b border-zinc-900/40">
+    <nav class="w-full max-w-7xl mx-auto px-4 sm:px-8 py-5 flex justify-between items-center relative z-10 border-b border-zinc-900/40">
         <!-- Left: Logo -->
-        <div class="text-2xl sm:text-3xl font-black tracking-tighter text-white select-none justify-self-start">
+        <div class="text-2xl sm:text-3xl font-black tracking-tighter text-white select-none pl-2">
             PITCHVIO<span class="text-purple-500">.</span>
         </div>
         
         <!-- Center: Target Badge -->
-        <div class="hidden sm:flex justify-self-center">
+        <div class="hidden sm:flex">
             <span class="text-xs font-black uppercase tracking-widest text-white bg-zinc-900/80 border border-zinc-700/80 px-4 py-2 rounded-full shadow-md shadow-black/40 whitespace-nowrap">
                 🎯 Built for Freelancers
             </span>
         </div>
         
         <!-- Right: Status Badges -->
-        <div class="flex items-center gap-2 justify-self-end">
+        <div class="flex items-center gap-2 pr-2">
             <span class="text-xs font-semibold bg-zinc-900 text-zinc-300 border border-zinc-800 px-3 py-1.5 rounded-full shadow-sm tracking-wide whitespace-nowrap">
                 ✨ Coming Soon
             </span>
@@ -49,15 +49,15 @@
         </div>
     </nav>
 
-    <!-- FIXED MAIN CONTAINER: Removed vertical centering classes to strictly pull ALL content high up -->
-    <main class="w-full max-w-6xl mx-auto flex flex-col items-center text-center px-6 relative z-10 mt-6 sm:mt-10 mb-10">
+    <!-- FIXED MAIN CONTAINER: Ultra-tight top margin to bring everything right under the navbar line -->
+    <main class="w-full max-w-6xl mx-auto flex flex-col items-center text-center px-6 relative z-10 mt-3 sm:mt-5 mb-10">
         
         <!-- Mobile Only Target Badge -->
         <span class="sm:hidden text-[10px] font-black uppercase tracking-widest text-white bg-zinc-900 border border-zinc-700 px-3 py-1.5 rounded-full mb-4">
             🎯 Built for Freelancers
         </span>
 
-        <!-- Neon Gradient Headline: Strictly dragged up -->
+        <!-- Neon Gradient Headline -->
         <h1 class="text-4xl sm:text-6xl font-black tracking-tight max-w-4xl leading-[1.12] text-white">
             Get High-Paying Clients on Autopilot. <br/>
             Find Leads & Generate Your 
@@ -67,24 +67,24 @@
         </h1>
         
         <!-- Explanation -->
-        <p class="mt-5 text-base sm:text-lg text-zinc-400 max-w-2xl font-medium leading-relaxed">
+        <p class="mt-4 text-base sm:text-lg text-zinc-400 max-w-2xl font-medium leading-relaxed">
             Stop wasting hours manual hunting. Pitchvio monitors LinkedIn, Twitter, and Instagram in real-time to find clients actively posting requirements. It crafts highly-personalized, contextual pitches—leaving you to just <strong>Copy, Paste, and Close.</strong>
         </p>
 
         <!-- Offer Tag -->
-        <div class="mt-6 inline-flex items-center gap-2 bg-zinc-900/80 border border-zinc-800 rounded-2xl px-4 py-2.5 max-w-md text-left shadow-lg">
+        <div class="mt-5 inline-flex items-center gap-2 bg-zinc-900/80 border border-zinc-800 rounded-2xl px-4 py-2 max-w-md text-left shadow-lg">
             <span class="text-lg">✨</span>
             <p class="text-xs sm:text-sm text-zinc-300 font-medium">
                 <strong>Launch Special:</strong> Join the waitlist today and lock in <span class="font-bold underline text-purple-400">Flat 50% OFF your first month</span> on any plan when we go live.
             </p>
         </div>
 
-        <p class="mt-8 text-xs font-bold uppercase tracking-widest text-zinc-500">
+        <p class="mt-6 text-xs font-bold uppercase tracking-widest text-zinc-500">
             👇 Join the waitlist now to secure your 50% discount
         </p>
 
-        <!-- Form Box: Now guaranteed to sit high above the fold -->
-        <div class="mt-3 w-full max-w-md bg-zinc-900/60 backdrop-blur-md p-4 rounded-2xl border border-zinc-800 shadow-2xl shadow-black/50 mb-24 relative z-20">
+        <!-- Form Box: Maximum upper visibility -->
+        <div class="mt-3 w-full max-w-md bg-zinc-900/60 backdrop-blur-md p-4 rounded-2xl border border-zinc-800 shadow-2xl shadow-black/50 mb-20 relative z-20">
             <form id="waitlistForm" class="flex flex-col sm:flex-row gap-2">
                 <input
                     type="email"
@@ -108,7 +108,7 @@
             </div>
         </div>
 
-        <!-- HIGHLIGHTED OUTLINE BOX (Perfect layout on scroll) -->
+        <!-- HIGHLIGHTED OUTLINE BOX -->
         <div class="w-full max-w-4xl text-left bg-zinc-900/30 backdrop-blur-md p-6 sm:p-10 rounded-3xl border border-zinc-800 shadow-2xl">
             
             <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
