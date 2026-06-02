@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pitchvio | Premium Waitlist</title>
+    <!-- Tailwind CSS for beautiful styling -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style>
+        /* OnSpace style custom gradient animation */
+        .glow-bg {
+            background: radial-gradient(circle, rgba(254,240,138,0.6) 0%, rgba(251,207,232,0.6) 50%, rgba(216,180,254,0.6) 100%);
+            filter: blur(80px);
+            animation: pulse 8s infinite alternate;
+        }
+        @keyframes pulse {
+            0% { transform: translate(-50%, -50%) scale(1); opacity: 0.5; }
+            100% { transform: translate(-50%, -50%) scale(1.2); opacity: 0.8; }
+        }
+    </style>
+</head>
+<body class="bg-[#fafafa] text-zinc-900 font-sans min-h-screen flex flex-col justify-between overflow-x-hidden relative">
+
+    <!-- The Glow Effect Background -->
+    <div class="absolute top-1/2 left-1/2 w-[350px] h-[350px] sm:w-[600px] sm:h-[600px] glow-bg -z-10 rounded-full"></div>
+
+    <!-- Navbar -->
+    <nav class="w-full max-w-7xl mx-auto px-6 py-5 flex justify-between items-center relative z-10">
+        <div class="text-2xl font-black tracking-tight bg-gradient-to-r from-purple-600 to-pink-500 bg-clip-text text-transparent">
+            PITCHVIO
+        </div>
+        <div>
+            <span class="text-sm font-medium bg-white/80 border border-zinc-200 px-3 py-1.5 rounded-full text-zinc-600 shadow-sm">
+                ✨ Coming Soon
+            </span>
+        </div>
+    </nav>
+
+    <!-- Main Hero Content -->
+    <main class="flex-grow flex flex-col items-center justify-center text-center px-4 relative z-10 my-12">
+        <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight max-w-3xl leading-[1.15] text-zinc-950">
+            Transform Your Video Pitches into 
+            <span class="bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
+                High-Converting Pages
+            </span>
+        </h1>
+        
+        <p class="mt-6 text-lg sm:text-xl text-zinc-600 max-w-2xl font-medium">
+            Stop sending boring links. Build beautiful visual waiting rooms and pitch pages for your clients instantly with AI.
+        </p>
+
+        <!-- Waitlist Form Box -->
+        <div class="mt-10 w-full max-w-md bg-white/70 backdrop-blur-md p-6 rounded-3xl border border-white shadow-xl shadow-zinc-200/50">
+            <form id="waitlistForm" class="flex flex-col sm:flex-row gap-3">
+                <input
+                    type="email"
+                    id="emailInput"
+                    placeholder="Enter your professional email..."
+                    required
+                    class="flex-grow px-4 py-3.5 bg-zinc-50 border border-zinc-200 rounded-2xl text-sm focus:outline-none focus:border-purple-500 transition-all text-zinc-900"
+                />
+                <button
+                    type="submit"
+                    class="px-6 py-3.5 bg-zinc-950 hover:bg-zinc-800 text-white font-semibold rounded-2xl text-sm transition-all shadow-lg shadow-zinc-900/10 whitespace-nowrap cursor-pointer"
+                >
+                    Join Waitlist →
+                </button>
+            </form>
+            <!-- Success Message (Hidden by default) -->
+            <div id="successMessage" class="hidden text-center py-4">
+                <div class="text-3xl mb-2">🎉</div>
+                <h3 class="font-bold text-zinc-900 text-lg">You're on the list, Founder!</h3>
+                <p class="text-sm text-zinc-500 mt-1">We'll send your exclusive invite code soon.</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="w-full text-center py-6 text-xs text-zinc-400 font-medium relative z-10 border-t border-zinc-100 bg-white/20">
+        © 2026 Pitchvio. All rights reserved. Built for elite creators.
+    </footer>
+
+    <script>
+        // Simple script to handle form submit visually
+        document.getElementById('waitlistForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            document.getElementById('waitlistForm').classList.add('hidden');
+            document.getElementById('successMessage').classList.remove('hidden');
+        });
+    </script>
+</body>
+</html>
