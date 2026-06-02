@@ -3,13 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pitchvio | Premium Waitlist</title>
-    <!-- Tailwind CSS for beautiful styling -->
+    <title>Pitchvio | AI-Powered Client Hunting for Freelancers</title>
+    <!-- Tailwind CSS -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <style>
-        /* OnSpace style custom gradient animation */
         .glow-bg {
-            background: radial-gradient(circle, rgba(254,240,138,0.6) 0%, rgba(251,207,232,0.6) 50%, rgba(216,180,254,0.6) 100%);
+            background: radial-gradient(circle, rgba(254,240,138,0.5) 0%, rgba(251,207,232,0.5) 50%, rgba(216,180,254,0.5) 100%);
             filter: blur(80px);
             animation: pulse 8s infinite alternate;
         }
@@ -21,7 +20,7 @@
 </head>
 <body class="bg-[#fafafa] text-zinc-900 font-sans min-h-screen flex flex-col justify-between overflow-x-hidden relative">
 
-    <!-- The Glow Effect Background -->
+    <!-- OnSpace Style Aura Glow -->
     <div class="absolute top-1/2 left-1/2 w-[350px] h-[350px] sm:w-[600px] sm:h-[600px] glow-bg -z-10 rounded-full"></div>
 
     <!-- Navbar -->
@@ -30,32 +29,68 @@
             PITCHVIO
         </div>
         <div>
-            <span class="text-sm font-medium bg-white/80 border border-zinc-200 px-3 py-1.5 rounded-full text-zinc-600 shadow-sm">
-                ✨ Coming Soon
+            <span class="text-xs sm:text-sm font-semibold bg-amber-50 border border-amber-200 px-3 py-1.5 rounded-full text-amber-700 shadow-sm">
+                🔥 Early Bird Offer: 3 Months Free
             </span>
         </div>
     </nav>
 
-    <!-- Main Hero Content -->
-    <main class="flex-grow flex flex-col items-center justify-center text-center px-4 relative z-10 my-12">
-        <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight max-w-3xl leading-[1.15] text-zinc-950">
-            Transform Your Video Pitches into 
+    <!-- Main Content -->
+    <main class="flex-grow flex flex-col items-center justify-center text-center px-4 relative z-10 my-6">
+        
+        <!-- Target Badge -->
+        <span class="text-xs font-bold uppercase tracking-widest text-purple-600 bg-purple-100/60 px-3 py-1 rounded-full mb-4">
+            Tired of Fiverr & Upwork?
+        </span>
+
+        <!-- Clear Intent Headline -->
+        <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight max-w-4xl leading-[1.15] text-zinc-950">
+            Get High-Paying Clients on Autopilot. <br class="hidden sm:inline"/>
+            Let AI Find Leads & Write Your 
             <span class="bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
-                High-Converting Pages
+                Cold DMs.
             </span>
         </h1>
         
-        <p class="mt-6 text-lg sm:text-xl text-zinc-600 max-w-2xl font-medium">
-            Stop sending boring links. Build beautiful visual waiting rooms and pitch pages for your clients instantly with AI.
+        <!-- Intent Explanation -->
+        <p class="mt-6 text-base sm:text-lg text-zinc-600 max-w-2xl font-medium leading-relaxed">
+            Stop wasting hours searching for clients. Pitchvio's AI tracks LinkedIn, Twitter, and Instagram in real-time to find people actively hiring in your niche. It generates highly personalized, high-converting DMs & Emails—all you have to do is <strong>Copy, Paste, and Close.</strong>
         </p>
 
-        <!-- Waitlist Form Box -->
-        <div class="mt-10 w-full max-w-md bg-white/70 backdrop-blur-md p-6 rounded-3xl border border-white shadow-xl shadow-zinc-200/50">
+        <!-- Feature Grid (Quick Clarity) -->
+        <div class="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-4 max-w-3xl w-full text-left">
+            <div class="bg-white/60 backdrop-blur-sm p-4 rounded-2xl border border-zinc-200/50">
+                <div class="text-xl mb-1">🎯</div>
+                <h4 class="font-bold text-zinc-900 text-sm">100+ Live Leads / Mo</h4>
+                <p class="text-xs text-zinc-500 mt-0.5">Fresh clients from Twitter, Insta, & LinkedIn posting in your niche.</p>
+            </div>
+            <div class="bg-white/60 backdrop-blur-sm p-4 rounded-2xl border border-zinc-200/50">
+                <div class="text-xl mb-1">✍️</div>
+                <h4 class="font-bold text-zinc-900 text-sm">AI Personalized DMs</h4>
+                <p class="text-xs text-zinc-500 mt-0.5">No generic templates. Purely customized pitches ready to copy-paste.</p>
+            </div>
+            <div class="bg-white/60 backdrop-blur-sm p-4 rounded-2xl border border-zinc-200/50">
+                <div class="text-xl mb-1">📊</div>
+                <h4 class="font-bold text-zinc-900 text-sm">Basic Freelancer CRM</h4>
+                <p class="text-xs text-zinc-500 mt-0.5">Track who you messaged, who replied, and manage your deals in one place.</p>
+            </div>
+        </div>
+
+        <!-- The Irresistible Offer Tag -->
+        <div class="mt-8 inline-flex items-center gap-2 bg-purple-50 border border-purple-200 rounded-2xl px-4 py-2.5 max-w-md text-left shadow-sm">
+            <span class="text-lg">🎁</span>
+            <p class="text-xs sm:text-sm text-purple-800 font-semibold">
+                <strong>Launch Special:</strong> Join the waitlist today and lock in <strong>3 Months Free + Lifetime 50% Off</strong> when we go live.
+            </p>
+        </div>
+
+        <!-- Waitlist Form -->
+        <div class="mt-6 w-full max-w-md bg-white/90 backdrop-blur-md p-5 rounded-3xl border border-zinc-200/80 shadow-xl shadow-zinc-200/30">
             <form id="waitlistForm" class="flex flex-col sm:flex-row gap-3">
                 <input
                     type="email"
                     id="emailInput"
-                    placeholder="Enter your professional email..."
+                    placeholder="Enter your email to secure spot..."
                     required
                     class="flex-grow px-4 py-3.5 bg-zinc-50 border border-zinc-200 rounded-2xl text-sm focus:outline-none focus:border-purple-500 transition-all text-zinc-900"
                 />
@@ -63,25 +98,25 @@
                     type="submit"
                     class="px-6 py-3.5 bg-zinc-950 hover:bg-zinc-800 text-white font-semibold rounded-2xl text-sm transition-all shadow-lg shadow-zinc-900/10 whitespace-nowrap cursor-pointer"
                 >
-                    Join Waitlist →
+                    Claim My Free Access →
                 </button>
             </form>
-            <!-- Success Message (Hidden by default) -->
+            
+            <!-- Success Message -->
             <div id="successMessage" class="hidden text-center py-4">
                 <div class="text-3xl mb-2">🎉</div>
-                <h3 class="font-bold text-zinc-900 text-lg">You're on the list, Founder!</h3>
-                <p class="text-sm text-zinc-500 mt-1">We'll send your exclusive invite code soon.</p>
+                <h3 class="font-bold text-zinc-900 text-lg">Your Free Spot is Locked, Founder!</h3>
+                <p class="text-sm text-zinc-500 mt-1">We've saved your 3-months free credit. We will email you your beta invite code soon.</p>
             </div>
         </div>
     </main>
 
     <!-- Footer -->
     <footer class="w-full text-center py-6 text-xs text-zinc-400 font-medium relative z-10 border-t border-zinc-100 bg-white/20">
-        © 2026 Pitchvio. All rights reserved. Built for elite creators.
+        © 2026 Pitchvio. All rights reserved. Built for elite freelancers.
     </footer>
 
     <script>
-        // Simple script to handle form submit visually
         document.getElementById('waitlistForm').addEventListener('submit', function(e) {
             e.preventDefault();
             document.getElementById('waitlistForm').classList.add('hidden');
