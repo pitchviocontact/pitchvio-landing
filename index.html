@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pitchvio | Professional Client Hunting Platform</title>
+    <!-- Tailwind CSS -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <style>
         /* Ultra-premium dark neon aura glow */
@@ -20,19 +21,24 @@
 </head>
 <body class="bg-[#09090b] text-zinc-100 font-sans min-h-screen flex flex-col overflow-x-hidden relative antialiased">
 
+    <!-- Premium Dark Mode Aura Glow Background -->
     <div class="absolute top-1/4 left-1/2 w-[350px] h-[350px] sm:w-[700px] sm:h-[700px] glow-bg -z-10 rounded-full"></div>
 
+    <!-- Navbar -->
     <nav class="w-full max-w-7xl mx-auto px-4 sm:px-8 py-6 grid grid-cols-2 sm:grid-cols-3 items-center relative z-10 border-b border-zinc-900/40">
+        <!-- Left: Logo -->
         <div class="text-2xl sm:text-3xl font-black tracking-tighter text-white select-none justify-self-start">
             PITCHVIO<span class="text-purple-500">.</span>
         </div>
         
+        <!-- Center: Target Badge -->
         <div class="hidden sm:flex justify-self-center">
             <span class="text-xs font-black uppercase tracking-widest text-white bg-zinc-900/80 border border-zinc-700/80 px-4 py-2 rounded-full shadow-md shadow-black/40 whitespace-nowrap">
                 🎯 Built for Freelancers
             </span>
         </div>
         
+        <!-- Right: Status Badges -->
         <div class="flex items-center gap-2 justify-self-end">
             <span class="text-xs font-semibold bg-zinc-900 text-zinc-300 border border-zinc-800 px-3 py-1.5 rounded-full shadow-sm tracking-wide whitespace-nowrap">
                 ✨ Coming Soon
@@ -43,12 +49,15 @@
         </div>
     </nav>
 
-    <main class="w-full max-w-6xl mx-auto flex flex-col items-center text-center px-6 relative z-10 mt-8 sm:mt-16 mb-10">
+    <!-- FIXED MAIN CONTAINER: Removed vertical centering classes to strictly pull ALL content high up -->
+    <main class="w-full max-w-6xl mx-auto flex flex-col items-center text-center px-6 relative z-10 mt-6 sm:mt-10 mb-10">
         
-        <span class="sm:hidden text-[10px] font-black uppercase tracking-widest text-white bg-zinc-900 border border-zinc-700 px-3 py-1.5 rounded-full mb-6">
+        <!-- Mobile Only Target Badge -->
+        <span class="sm:hidden text-[10px] font-black uppercase tracking-widest text-white bg-zinc-900 border border-zinc-700 px-3 py-1.5 rounded-full mb-4">
             🎯 Built for Freelancers
         </span>
 
+        <!-- Neon Gradient Headline: Strictly dragged up -->
         <h1 class="text-4xl sm:text-6xl font-black tracking-tight max-w-4xl leading-[1.12] text-white">
             Get High-Paying Clients on Autopilot. <br/>
             Find Leads & Generate Your 
@@ -57,22 +66,25 @@
             </span>
         </h1>
         
-        <p class="mt-6 text-base sm:text-lg text-zinc-400 max-w-2xl font-medium leading-relaxed">
+        <!-- Explanation -->
+        <p class="mt-5 text-base sm:text-lg text-zinc-400 max-w-2xl font-medium leading-relaxed">
             Stop wasting hours manual hunting. Pitchvio monitors LinkedIn, Twitter, and Instagram in real-time to find clients actively posting requirements. It crafts highly-personalized, contextual pitches—leaving you to just <strong>Copy, Paste, and Close.</strong>
         </p>
 
-        <div class="mt-8 inline-flex items-center gap-2 bg-zinc-900/80 border border-zinc-800 rounded-2xl px-4 py-2.5 max-w-md text-left shadow-lg">
+        <!-- Offer Tag -->
+        <div class="mt-6 inline-flex items-center gap-2 bg-zinc-900/80 border border-zinc-800 rounded-2xl px-4 py-2.5 max-w-md text-left shadow-lg">
             <span class="text-lg">✨</span>
             <p class="text-xs sm:text-sm text-zinc-300 font-medium">
                 <strong>Launch Special:</strong> Join the waitlist today and lock in <span class="font-bold underline text-purple-400">Flat 50% OFF your first month</span> on any plan when we go live.
             </p>
         </div>
 
-        <p class="mt-10 text-xs font-bold uppercase tracking-widest text-zinc-500">
+        <p class="mt-8 text-xs font-bold uppercase tracking-widest text-zinc-500">
             👇 Join the waitlist now to secure your 50% discount
         </p>
 
-        <div class="mt-3 w-full max-w-md bg-zinc-900/60 backdrop-blur-md p-4 rounded-2xl border border-zinc-800 shadow-2xl shadow-black/50 mb-20 relative z-20">
+        <!-- Form Box: Now guaranteed to sit high above the fold -->
+        <div class="mt-3 w-full max-w-md bg-zinc-900/60 backdrop-blur-md p-4 rounded-2xl border border-zinc-800 shadow-2xl shadow-black/50 mb-24 relative z-20">
             <form id="waitlistForm" class="flex flex-col sm:flex-row gap-2">
                 <input
                     type="email"
@@ -96,15 +108,18 @@
             </div>
         </div>
 
+        <!-- HIGHLIGHTED OUTLINE BOX (Perfect layout on scroll) -->
         <div class="w-full max-w-4xl text-left bg-zinc-900/30 backdrop-blur-md p-6 sm:p-10 rounded-3xl border border-zinc-800 shadow-2xl">
             
             <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
                 
+                <!-- Left Column: How It Works -->
                 <div class="flex flex-col space-y-4">
                     <h3 class="text-xs font-black uppercase tracking-widest text-zinc-500 px-1 mb-2">
                         How it works
                     </h3>
                     
+                    <!-- Step 1 -->
                     <div class="bg-zinc-900/50 p-5 rounded-2xl border border-zinc-800/80 flex gap-4 items-start shadow-sm">
                         <div class="text-2xl bg-zinc-950 p-2 rounded-xl border border-zinc-800 shrink-0">🔍</div>
                         <div>
@@ -113,6 +128,7 @@
                         </div>
                     </div>
 
+                    <!-- Step 2 -->
                     <div class="bg-zinc-900/50 p-5 rounded-2xl border border-zinc-800/80 flex gap-4 items-start shadow-sm">
                         <div class="text-2xl bg-zinc-950 p-2 rounded-xl border border-zinc-800 shrink-0">✍️</div>
                         <div>
@@ -121,6 +137,7 @@
                         </div>
                     </div>
 
+                    <!-- Step 3 -->
                     <div class="bg-white/5 p-5 rounded-2xl border border-purple-900/50 flex gap-4 items-start shadow-sm bg-gradient-to-r from-purple-950/10 to-transparent">
                         <div class="text-2xl bg-zinc-950 p-2 rounded-xl border border-zinc-800 shrink-0">📋</div>
                         <div>
@@ -130,11 +147,13 @@
                     </div>
                 </div>
 
+                <!-- Right Column: Platform Power -->
                 <div class="flex flex-col space-y-4">
                     <h3 class="text-xs font-black uppercase tracking-widest text-zinc-500 px-1 mb-2">
                         Platform Power
                     </h3>
 
+                    <!-- Multi-channel Feature -->
                     <div class="bg-zinc-900/50 p-5 rounded-2xl border border-zinc-800/80 flex gap-4 items-start shadow-sm">
                         <div class="text-2xl bg-zinc-950 p-2 rounded-xl border border-zinc-800 shrink-0">🚀</div>
                         <div>
@@ -143,6 +162,7 @@
                         </div>
                     </div>
 
+                    <!-- Advanced CRM Feature -->
                     <div class="bg-zinc-900/50 p-5 rounded-2xl border border-zinc-800/80 flex gap-4 items-start shadow-sm">
                         <div class="text-2xl bg-zinc-950 p-2 rounded-xl border border-zinc-800 shrink-0">📊</div>
                         <div>
@@ -151,6 +171,7 @@
                         </div>
                     </div>
 
+                    <!-- Polish Skill Feature -->
                     <div class="bg-zinc-900/50 p-5 rounded-2xl border border-zinc-800/80 flex gap-4 items-start shadow-sm">
                         <div class="text-2xl bg-zinc-950 p-2 rounded-xl border border-zinc-800 shrink-0">⏳</div>
                         <div>
@@ -164,6 +185,7 @@
         </div>
     </main>
 
+    <!-- Footer -->
     <footer class="w-full text-center py-6 text-xs text-zinc-600 font-medium relative z-10 border-t border-zinc-900 bg-black/20 mt-auto">
         © 2026 Pitchvio. All rights reserved. Built for professional creators.
     </footer>
