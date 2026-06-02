@@ -29,8 +29,12 @@
         <div class="text-xl font-black tracking-tighter text-zinc-950">
             PITCHVIO<span class="text-purple-600">.</span>
         </div>
-        <div>
-            <span class="text-xs font-semibold bg-zinc-100 border border-zinc-200/80 px-3 py-1.5 rounded-full text-zinc-600 shadow-xs">
+        <div class="flex items-center gap-3">
+            <!-- NEW: Coming Soon / Under Production Tag -->
+            <span class="hidden sm:inline-flex text-xs font-semibold bg-zinc-950 text-white px-3 py-1.5 rounded-full shadow-sm tracking-wide">
+                🛠️ Under Production / Coming Soon
+            </span>
+            <span class="text-xs font-semibold bg-purple-50 border border-purple-200 px-3 py-1.5 rounded-full text-purple-700 shadow-sm">
                 💼 Waitlist Offer: Flat 50% OFF
             </span>
         </div>
@@ -39,9 +43,14 @@
     <!-- Main Content -->
     <main class="flex-grow flex flex-col items-center justify-center text-center px-6 relative z-10 my-10">
         
+        <!-- Mobile-Only Coming Soon Tag (Just in case) -->
+        <span class="sm:hidden text-[10px] font-bold uppercase tracking-wider text-zinc-500 bg-zinc-200/60 px-2.5 py-1 rounded-full mb-3">
+            🛠️ Under Production
+        </span>
+
         <!-- Target Badge -->
         <span class="text-xs font-bold uppercase tracking-wider text-zinc-500 bg-zinc-100 border border-zinc-200/60 px-3 py-1 rounded-full mb-6">
-            Built for Elite Freelancers
+            Built for Freelancers
         </span>
 
         <!-- Clear Intent Headline -->
@@ -61,6 +70,134 @@
         <!-- The Updated Irresistible Offer Tag -->
         <div class="mt-8 inline-flex items-center gap-2 bg-purple-50/80 border border-purple-100 rounded-2xl px-4 py-2.5 max-w-md text-left shadow-xs">
             <span class="text-lg">✨</span>
+            <p class="text-xs sm:text-sm text-purple-900 font-medium">
+                <strong>Launch Special:</strong> Join the waitlist today and lock in <span class="font-bold underline text-purple-950">Flat 50% OFF your first month</span> on any plan when we go live.
+            </p>
+        </div>
+
+        <!-- Immediate Action Prompt -->
+        <p class="mt-10 text-xs font-bold uppercase tracking-widest text-zinc-400">
+            👇 Join the waitlist now to secure your 50% discount
+        </p>
+
+        <!-- Waitlist Form Card -->
+        <div class="mt-3 w-full max-w-md bg-white/90 backdrop-blur-md p-4 rounded-2xl border border-zinc-200/60 shadow-xl shadow-zinc-200/20">
+            <form id="waitlistForm" class="flex flex-col sm:flex-row gap-2">
+                <input
+                    type="email"
+                    id="emailInput"
+                    placeholder="Enter your professional email..."
+                    required
+                    class="flex-grow px-4 py-3 bg-zinc-50 border border-zinc-200 rounded-xl text-sm focus:outline-none focus:border-zinc-400 transition-all text-zinc-900"
+                />
+                <button
+                    type="submit"
+                    class="px-5 py-3 bg-zinc-950 hover:bg-zinc-800 text-white font-semibold rounded-xl text-sm transition-all shadow-md shadow-zinc-900/10 whitespace-nowrap cursor-pointer"
+                >
+                    Claim 50% Off →
+                </button>
+            </form>
+            
+            <!-- Success Message -->
+            <div id="successMessage" class="hidden text-center py-4">
+                <div class="text-2xl mb-1">🎉</div>
+                <h3 class="font-bold text-zinc-900 text-sm">Your 50% Discount is Secured!</h3>
+                <p class="text-xs text-zinc-500 mt-0.5">We've saved your spot. We will email your discount code at launch.</p>
+            </div>
+        </div>
+
+        <!-- HIGHLIGHTED OUTLINE BOX SECTION -->
+        <div class="mt-24 w-full max-w-4xl text-left bg-white/40 backdrop-blur-md p-6 sm:p-10 rounded-3xl border border-zinc-200/80 shadow-2xl shadow-zinc-200/40">
+            <h3 class="text-xs font-black uppercase tracking-widest text-zinc-400 mb-8 text-center sm:text-left">
+                The Pitchvio Workflow & Features
+            </h3>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                
+                <!-- Left Column: How It Works Process -->
+                <div class="space-y-4">
+                    <h4 class="text-xs font-bold text-zinc-400 uppercase tracking-wider px-1">How it works</h4>
+                    
+                    <!-- Step 1 -->
+                    <div class="bg-white/80 p-5 rounded-2xl border border-zinc-200/40 flex gap-4 items-start shadow-xs">
+                        <div class="text-2xl bg-zinc-50 p-2.5 rounded-xl border border-zinc-200/30 shrink-0">🔍</div>
+                        <div>
+                            <h5 class="font-bold text-zinc-950 text-base leading-tight">Real-Time Social Tracking</h5>
+                            <p class="text-xs text-zinc-500 mt-1 leading-relaxed">AI constantly scans Instagram, Twitter, and LinkedIn to instantly catch fresh client hiring posts in your specific niche.</p>
+                        </div>
+                    </div>
+
+                    <!-- Step 2 -->
+                    <div class="bg-white/80 p-5 rounded-2xl border border-zinc-200/40 flex gap-4 items-start shadow-xs">
+                        <div class="text-2xl bg-zinc-50 p-2.5 rounded-xl border border-zinc-200/40 flex gap-4 items-start shadow-xs">
+                        <div class="text-2xl bg-zinc-50 p-2.5 rounded-xl border border-zinc-200/30 shrink-0">✍️</div>
+                        <div>
+                            <h5 class="font-bold text-zinc-950 text-base leading-tight">Hyper-Personalized Pitches</h5>
+                            <p class="text-xs text-zinc-500 mt-1 leading-relaxed">No generic templates. The system analyzes the exact intent of the client's post and drafts tailored Cold DMs & Emails engineered to get replies.</p>
+                        </div>
+                    </div>
+
+                    <!-- Step 3 -->
+                    <div class="bg-white/80 p-5 rounded-2xl border border-zinc-200/40 flex gap-4 items-start shadow-xs">
+                        <div class="text-2xl bg-zinc-50 p-2.5 rounded-xl border border-zinc-200/40 flex gap-4 items-start shadow-xs">
+                        <div class="text-2xl bg-zinc-50 p-2.5 rounded-xl border border-zinc-200/30 shrink-0">📋</div>
+                        <div>
+                            <h5 class="font-bold text-zinc-950 text-base leading-tight">1-Click Copy & Outreach</h5>
+                            <p class="text-xs text-zinc-500 mt-1 leading-relaxed">Get direct routing links to the client's inbox. Just copy the custom-written message, paste it on their profile, and click send.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Column: Advanced CRM & Capabilities -->
+                <div class="space-y-4">
+                    <h4 class="text-sm font-bold text-zinc-400 uppercase tracking-wider px-1">Platform Power</h4>
+
+                    <!-- Multi-channel Feature -->
+                    <div class="bg-white/80 p-5 rounded-2xl border border-zinc-200/40 flex gap-4 items-start shadow-xs">
+                        <div class="text-2xl bg-zinc-50 p-2.5 rounded-xl border border-zinc-200/30 shrink-0">🚀</div>
+                        <div>
+                            <h5 class="font-bold text-zinc-950 text-base leading-tight">Multi-Channel Client Outreach</h5>
+                            <p class="text-xs text-zinc-500 mt-1 leading-relaxed">Pitch wherever your clients hang out. Dominate across platforms with structured formats built specifically for Cold Emails, Twitter DMs, and Instagram pitches.</p>
+                        </div>
+                    </div>
+
+                    <!-- Advanced CRM Feature -->
+                    <div class="bg-white/80 p-5 rounded-2xl border border-zinc-200/40 flex gap-4 items-start shadow-xs">
+                        <div class="text-2xl bg-zinc-50 p-2.5 rounded-xl border border-zinc-200/30 shrink-0">📊</div>
+                        <div>
+                            <h5 class="font-bold text-zinc-950 text-base leading-tight">Advanced Freelancer CRM</h5>
+                            <p class="text-xs text-zinc-500 mt-1 leading-relaxed">A professional pipeline dashboard tracking total messages sent, active conversion/reply rates, remaining lead counts, and exactly who to follow up with next.</p>
+                        </div>
+                    </div>
+
+                    <!-- Polish Skill Feature -->
+                    <div class="bg-white/80 p-5 rounded-2xl border border-zinc-200/40 flex gap-4 items-start shadow-xs">
+                        <div class="text-2xl bg-zinc-50 p-2.5 rounded-xl border border-zinc-200/30 shrink-0">⏳</div>
+                        <div>
+                            <h5 class="font-bold text-zinc-950 text-base leading-tight">Zero-Waste Resource Focus</h5>
+                            <p class="text-xs text-zinc-500 mt-1 leading-relaxed">Stop wasting precious hours digging through thousands of manual social posts. Let automation handle the hunt while you spend your time leveling up your skill.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="w-full text-center py-6 text-xs text-zinc-400 font-medium relative z-10 border-t border-zinc-100 bg-white/20">
+        © 2026 Pitchvio. All rights reserved. Built for professional creators.
+    </footer>
+
+    <script>
+        document.getElementById('waitlistForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            document.getElementById('waitlistForm').classList.add('hidden');
+            document.getElementById('successMessage').classList.remove('hidden');
+        });
+    </script>
+</body>
+</html>            <span class="text-lg">✨</span>
             <p class="text-xs sm:text-sm text-purple-900 font-medium">
                 <strong>Launch Special:</strong> Join the waitlist today and lock in <span class="font-bold underline text-purple-950">Flat 50% OFF your first month</span> on any plan when we go live.
             </p>
