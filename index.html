@@ -14,8 +14,8 @@
             animation: pulse 10s infinite alternate;
         }
         @keyframes pulse {
-            0% { transform: translate(-50%, -50%) scale(1); opacity: 0.4; }
-            100% { transform: translate(-50%, -50%) scale(1.15); opacity: 0.7; }
+            0% { transform: translate(-50%, -50%) scale(1); opacity: 0.5; }
+            100% { transform: translate(-50%, -50%) scale(1.15); opacity: 0.8; }
         }
     </style>
 </head>
@@ -24,36 +24,37 @@
     <!-- Premium Dark Mode Aura Glow Background -->
     <div class="absolute top-1/4 left-1/2 w-[350px] h-[350px] sm:w-[700px] sm:h-[700px] glow-bg -z-10 rounded-full"></div>
 
-    <!-- Navbar: Added distinct crisp divider line below to isolate from main content -->
-    <nav class="w-full max-w-7xl mx-auto px-4 sm:px-8 py-5 flex flex-row items-center justify-between relative z-10 border-b border-zinc-800/70">
+    <!-- Navbar: Structured flex layout with absolute centered target block -->
+    <nav class="w-full max-w-7xl mx-auto px-4 sm:px-8 py-5 flex justify-between items-center relative z-10 border-b border-zinc-900/40">
         <!-- Left Side: Logo -->
-        <div class="text-2xl sm:text-3xl font-black tracking-tighter text-white select-none pl-2">
+        <div class="text-2xl sm:text-3xl font-black tracking-tighter text-white select-none pl-2 z-20">
             PITCHVIO<span class="text-purple-500">.</span>
         </div>
         
-        <!-- Center Area: Restored to normal flexible grid flow matching logo alignment line -->
-        <div class="hidden sm:flex items-center justify-center flex-grow">
+        <!-- Center Fixed Area: Perfectly aligned to the absolute middle line of the page -->
+        <div class="hidden lg:absolute lg:left-1/2 lg:-translate-x-1/2 sm:flex items-center z-10">
+            <!-- FIXED: Size scaled up to text-sm, extra padding & perfectly centered -->
             <span class="text-xs sm:text-sm font-extrabold uppercase tracking-widest text-white bg-zinc-900 border border-zinc-700/80 px-5 py-2.5 rounded-full shadow-lg shadow-black/60 whitespace-nowrap">
                 🎯 Built for Freelancers
             </span>
         </div>
         
         <!-- Right Side: Action Badges -->
-        <div class="flex items-center gap-2 pr-2">
+        <div class="flex items-center gap-2 pr-2 z-20">
             <span class="text-xs font-semibold bg-zinc-900 text-zinc-300 border border-zinc-800 px-3 py-1.5 rounded-full shadow-sm tracking-wide whitespace-nowrap">
                 ✨ Coming Soon
             </span>
             <span class="hidden md:inline-flex text-xs font-semibold bg-purple-950/50 border border-purple-800 px-3 py-1.5 rounded-full text-purple-300 shadow-sm whitespace-nowrap">
-                💼 50% OFF
+                💼 50% OFF Offer
             </span>
         </div>
     </nav>
 
-    <!-- Main Content: Added standard top padding/margin to pull content smoothly below separator line -->
-    <main class="w-full max-w-6xl mx-auto flex flex-col items-center text-center px-6 relative z-10 mt-10 sm:mt-14 mb-10">
+    <!-- Main Content -->
+    <main class="w-full max-w-6xl mx-auto flex flex-col items-center text-center px-6 relative z-10 mt-6 sm:mt-12 mb-10">
         
-        <!-- Tablet/Small Desktop Fallback Badge -->
-        <span class="sm:hidden text-xs font-extrabold uppercase tracking-widest text-white bg-zinc-900 border border-zinc-700 px-5 py-2 rounded-full mb-6 shadow-lg">
+        <!-- Tablet/Small Desktop Fallback Badge (Shows up perfectly centered right above title on medium screens) -->
+        <span class="lg:hidden text-xs font-extrabold uppercase tracking-widest text-white bg-zinc-900 border border-zinc-700 px-5 py-2 rounded-full mb-6 shadow-lg">
             🎯 Built for Freelancers
         </span>
 
@@ -67,19 +68,19 @@
         </h1>
         
         <!-- Explanation -->
-        <p class="mt-5 text-base sm:text-lg text-zinc-400 max-w-2xl font-medium leading-relaxed">
+        <p class="mt-4 text-base sm:text-lg text-zinc-400 max-w-2xl font-medium leading-relaxed">
             Stop wasting hours manual hunting. Pitchvio monitors LinkedIn, Twitter, and Instagram in real-time to find clients actively posting requirements. It crafts highly-personalized, contextual pitches—leaving you to just <strong>Copy, Paste, and Close.</strong>
         </p>
 
         <!-- Offer Tag -->
-        <div class="mt-6 inline-flex items-center gap-2 bg-zinc-900/80 border border-zinc-800 rounded-2xl px-4 py-2 max-w-md text-left shadow-lg">
+        <div class="mt-5 inline-flex items-center gap-2 bg-zinc-900/80 border border-zinc-800 rounded-2xl px-4 py-2 max-w-md text-left shadow-lg">
             <span class="text-lg">✨</span>
             <p class="text-xs sm:text-sm text-zinc-300 font-medium">
                 <strong>Launch Special:</strong> Join the waitlist today and lock in <span class="font-bold underline text-purple-400">Flat 50% OFF your first month</span> on any plan when we go live.
             </p>
         </div>
 
-        <p class="mt-8 text-xs font-bold uppercase tracking-widest text-zinc-500">
+        <p class="mt-6 text-xs font-bold uppercase tracking-widest text-zinc-500">
             👇 Join the waitlist now to secure your 50% discount
         </p>
 
